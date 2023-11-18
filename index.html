@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Technohacks Registeration Form</h1>
+<form id="registrationForm" onsubmit="validateForm(); return false;">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <label for="telephone">Phone Number:</label>
+    <input type="tel" name="telephone" id="telephone" required>
+
+    <label for="programs">Program:</label>
+    <select name="program" id="program" required>
+        <option value="select">Select</option>
+        <option value="webDevelopment">Web Development</option>
+        <option value="Python Development">Python Development</option>
+        <option value="cyberSecurity">Cybersecurity and Ethical Hacking</option>
+        <option value="digitalForensics">Digital Forensics</option>
+        <option value="javaDevelopment">Java Development</option>
+        <option value="cPrograming">C Development</option>
+        <option value="dataScience">Data Science</option>
+    </select>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <button type="submit">Register</button>
+</form>
+
+<script src="app.js"></script>
+</body>
+</html>
